@@ -38,7 +38,8 @@ body{
 }
 
 .cabecalho  ul{
-    
+    display: flex;
+    gap: 20px;
 }
 
 .cabecalho li a{
@@ -145,6 +146,11 @@ body{
     font-size: 45px;
     font-weight: 500;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.projetos .titulo:hover{
+    text-shadow: 0px 0px 5px black;
 }
 
 .projetos .container-projetos{
@@ -223,6 +229,59 @@ body{
 /*sumir ao receber essa class*/
 .projetos .btn-mostrar-projetos.remover{
     display: none;
+}
+
+.skills {
+    margin-top: 25%;
+}
+
+.info__title{
+    letter-spacing: 3px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.info__title:hover{
+    text-shadow: 0px 0px 5px black;
+}
+
+.skills__img {
+    width: 55px;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.skills__name {
+    font-size: small;
+    cursor: pointer;
+    margin-bottom: 25%;
+}
+
+.skills__name:hover {
+    text-decoration: underline;
+}
+
+.skills__content {
+    display: grid; /* Adicionando display grid */
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+div.skills__box{
+    display: grid;
+    place-items: center;
+    transition: transform .4s;
+}
+
+.skills__box:hover{
+    transform: translateY(-.25rem);
 }
 
 @keyframes gradient-animation {
