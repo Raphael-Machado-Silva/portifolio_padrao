@@ -39,7 +39,7 @@ body{
 
 .cabecalho  ul{
     display: flex;
-    gap: 20px;
+    gap: 12px;
 }
 
 .cabecalho li a{
