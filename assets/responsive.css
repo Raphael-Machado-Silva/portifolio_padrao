@@ -23,16 +23,42 @@
 }
 
 @media(max-width: 500px){
+    h1.logo{
+        margin-left: -10px;
+    }
     .ul{
         text-align: center;
+        margin-left: 9px;
     }
     .ul > li> a{
-        font-size: 1.1em;
+        font-size: 1em;
+    }
+
+    .ul > li{
+        text-align: center;
+    }
+
+    .timeline-content{
+        font-size: 12px;
+        padding: 25px 25px;
+    }
+    .text_education{
+        text-align: center;
     }
 }
 
 @media(max-width: 425px){
+    .logo_rm{
+        display: none;
+    }
 
+    .ul > li > a{
+        padding: 10px;
+    }
+    .text_education{
+        text-align: center;
+        font-size: 20px;
+    }
     .home .informacoes h1{
         font-size: 30px;
     }
@@ -47,5 +73,28 @@
 
     .projetos{
         padding: 30px;
+    }
+}
+
+@media(max-width: 380px){
+    .ul{
+        margin-left: -12px;
+    }
+    .text_education{
+        display: none;
+    }
+    .timeline-content{
+        text-align: center;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .timeline-content h3{
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .timeline-item{
+        padding: 0px;
     }
 }

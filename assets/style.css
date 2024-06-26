@@ -301,6 +301,7 @@ div.skills__box{
 }
 
 .heading{
+    margin-top: 15%;
     letter-spacing: 3px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
@@ -413,13 +414,12 @@ div.skills__box{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: blue;
+    background-color: #000000bb;
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track{
-    background-color: red ;
-    width: 30px ;
+    background: linear-gradient(45deg, #700e8b,#9d00ff, #511661);
 }
 
 @keyframes gradient-animation {
