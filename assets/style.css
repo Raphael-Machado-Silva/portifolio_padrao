@@ -317,10 +317,77 @@ div.skills__box{
 }
 
 .education{
-    padding: 100px;
+    padding: 100px 15px;
+    background-color: black;
 }
 
+.education h2{
+    margin-bottom: 3rem;
+}
 
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: aliceblue;
+    left: calc(50% - 1px);
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: red;
+    box-shadow: 0px 0px 25px blue,
+                0px 0px 50px blue;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0px 15px;
+}
+
+.timeline-content{
+    background-color: yellow;
+    border: 3px solid blue;
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px blue;
+    cursor: pointer;
+}
 
 @keyframes gradient-animation {
     0%{
