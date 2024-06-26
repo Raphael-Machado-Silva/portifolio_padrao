@@ -1,5 +1,8 @@
 
 @media(max-width: 709px){
+    .home{
+        margin-top: 10%;
+    }
     section.home > div.informacoes{
         display: flex;
         align-items: center;
