@@ -22,6 +22,15 @@
     }
 }
 
+@media(max-width: 500px){
+    .ul{
+        text-align: center;
+    }
+    .ul > li> a{
+        font-size: 1.1em;
+    }
+}
+
 @media(max-width: 425px){
 
     .home .informacoes h1{

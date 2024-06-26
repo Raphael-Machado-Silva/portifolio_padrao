@@ -85,6 +85,19 @@ body{
     margin-bottom: 10px;
 }
 
+.front-end{
+    color: #c376f3;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.front-end:hover{
+    text-shadow: 0px 0px 1px white;
+    font-size: 1.05em;
+}
+
 .home .redes-sociais{
     display: flex;
     gap: 20px;
@@ -286,6 +299,10 @@ div.skills__box{
 .skills__box:hover{
     transform: translateY(-.25rem);
 }
+
+
+
+
 
 @keyframes gradient-animation {
     0%{
