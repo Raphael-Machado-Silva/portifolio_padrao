@@ -300,7 +300,25 @@ div.skills__box{
     transform: translateY(-.25rem);
 }
 
+.heading{
+    letter-spacing: 3px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
+.heading:hover{
+    text-shadow: 0px 0px 5px black;
+}
+
+.education{
+    padding: 100px;
+}
 
 
 
