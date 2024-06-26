@@ -6,7 +6,6 @@ html{
 body{
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
-    max-width: 1120px;
 
     background: linear-gradient(150deg, rgb(0, 0, 0),#9d00ff, #000000);
     background-size: 130% 130%;
@@ -59,9 +58,11 @@ body{
 .home{
     display: flex;
     min-height: calc(100vh - 125px);
+    width: 100%;
     align-items: center;
     gap: 50px;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .home .informacoes{
@@ -70,13 +71,17 @@ body{
     gap: 15px;
     letter-spacing: 2px;
     padding: 0 15px;
-    max-width: 50%;
+    max-width: 80%;
 }
 
 .home .informacoes h1{
     font-family: "Raleway", sans-serif;
     font-size: 45px;
     margin-bottom: 20px;
+}
+
+.texto_some{
+    color: #9443d8;
 }
 
 .home .informacoes p{
@@ -111,7 +116,6 @@ body{
     padding: 10px;
     text-align: center;
     font-size: 26px;
-
     transition: 0.4s;
 }
 
@@ -491,6 +495,14 @@ border-bottom: 3px solid white;
     font-size: 14px;
     color: white;
 }
+
+.txt_animado{
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
 
 @keyframes gradient-animation {
     0%{
