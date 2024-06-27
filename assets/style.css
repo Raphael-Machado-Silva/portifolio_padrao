@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@300;400;500;600;700;800;900 & display=swap');
+
 
 html{
     color: white;
@@ -7,23 +9,79 @@ html{
 body{
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
-
+    width: 100vw;
     background: linear-gradient(150deg, rgb(0, 0, 0),#9d00ff, #000000);
     background-size: 130% 130%;
 }
 
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 15px;
+header{
+    background-color: transparent;
 }
 
-.cabecalho .logo{
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+
+.login-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+.icon{
+    margin-top: 15px;
+}
+
+.logo{
     width: 65px;
     height: 65px;
     border-radius: 50%;
     border: 2px solid white;
+    padding-left: 11px;
+    padding-bottom: 2px;
     text-decoration: underline;
     text-align: center;
     line-height: 55px;
@@ -32,25 +90,24 @@ body{
     transition: 0.3s;
 }
 
-.cabecalho a:hover .logo{
+a:hover .logo{
     color: #9443d8;
     border: 2px solid #9443d8;
 }
 
-.cabecalho  ul{
+.nav-list  ul{
     display: flex;
     gap: 12px;
 }
 
-.cabecalho li a{
+.nav-list li a{
     font-size: 20px;
     text-transform: capitalize;
     padding: 10px 20px;
-    
     transition: 0.3s;
 }
 
-.cabecalho li a:hover{
+.nav-list li a:hover{
     background-color: #9443d8;
     color: white;
     border-radius: 50px;
@@ -516,6 +573,83 @@ border-bottom: 3px solid white;
 
 
 
+
+@media screen and (max-width:700px) {
+    .nav-bar{
+        padding: 1.5rem;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        margin-right: 24px;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none ;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -15px;
+    }
+
+    .open > ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;        
+        margin-top: 24px;
+    }
+    .open > ul > li{
+        padding: 0px 2px 22px 2px;
+        width: 45%;
+        margin-bottom: 15px;
+        border-radius: 50px;
+        border: 2px solid #9443d8;
+    }
+    .open > ul > li > a{
+        font-family: "Raleway", arial;
+        font-weight: bold;
+
+        font-size: 16px;
+        text-align: center;
+        transition: 0.3s ease;
+    }
+    .open > ul > li:hover{
+        background-color: #9443d8;
+        box-shadow: 0px 0px 5px #9443d8;;
+        color: white;
+        border-radius: 50px;
+    }
+    .open > ul > li > a:hover{
+        font-size: 18px;
+    }
+    
+}
 @keyframes gradient-animation {
     0%{
         background-position: 0% 50%;

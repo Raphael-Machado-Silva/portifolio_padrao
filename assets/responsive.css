@@ -1,25 +1,14 @@
 
 @media(max-width: 709px){
+    .logo_rm{
+        margin-left: 15px;
+    }
     .home{
         margin-top: 10%;
     }
     section.home > div.informacoes{
         display: flex;
         align-items: center;
-    }
-    h1.logo{
-        margin-left: -10px;
-    }
-    .ul{
-        text-align: center;
-        margin-left: 9px;
-    }
-    .ul > li> a{
-        font-size: 1em;
-    }
-
-    .ul > li{
-        text-align: center;
     }
 
     .timeline-content{
@@ -34,17 +23,7 @@
 
 @media(max-width: 468px){
     .logo_rm{
-        display: none;
-    }
-
-    .cabecalho{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ul > li > a{
-        padding: 10px;
+        margin-left: 15px;
     }
     .text_education{
         text-align: center;
@@ -77,9 +56,6 @@
 }
 
 @media(max-width: 380px){
-    .ul{
-        margin-left: -12px;
-    }
     .text_education{
         display: none;
     }
@@ -276,10 +252,6 @@
     .texto_some{
         display: none;
     }
-    .cabecalho{
-        padding: 30px;
-    }
-
     .home {
         flex-direction: column;
         align-items: center;

@@ -21,26 +21,37 @@
     <link rel="stylesheet" href="assets/responsive.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="#" class="logo_rm">
-            <h1 class="logo">RM</h1>
-        </a>
+    <header class="header">
+        <nav  class="nav-bar">
+            <a href="#" class="logo_rm">
+                <h1 class="logo">RM</h1>
+            </a>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Educação</a></li>
+                </ul>
+            </div>
 
-        <nav class="nav">
-            <ul class="ul">
-                <li>
-                    <a href="#projetos">Projetos</a>
-                </li>
-                <li>
-                    <a href="#skills">Habilidades</a>
-                </li>
-                <li>
-                    <a href="#education">Educação</a>
-                </li>
-            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="assets/img/menu_white_36dp.svg" alt="" class="icon"></button>
+            </div>
         </nav>
-    </header>
 
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Educação</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    
     <section class="home">
         <div class="informacoes">
             <div class="txt_animado">
