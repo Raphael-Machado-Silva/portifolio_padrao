@@ -185,13 +185,13 @@ body{
     position: relative;
     display: none;
 }
-
 .projetos .projeto.ativo{
     display: block;
 }
 
 .projetos .projeto img{
     height: 100%;
+    border-radius: 12px;
 }
 
 .projetos .projeto h3{
@@ -214,13 +214,14 @@ body{
     font-weight: 600;
     opacity: 0;
     transition: 0.4s;
-
+    border-radius: 12px;
     padding: 20px;
 }
 
 .projetos .projeto .informacoes-projeto:hover{
     opacity: 0.75;
     background-color: black;
+
 }
 
 .projetos .btn-mostrar-projetos{
