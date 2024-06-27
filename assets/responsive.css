@@ -96,6 +96,10 @@
     .timeline-item{
         padding: 0px;
     }
+
+    .footer > p.copyright{
+        font-size: 12px;
+    }
 }
 @media(min-width: 710px){
     .home .informacoes{
