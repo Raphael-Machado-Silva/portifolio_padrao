@@ -33,14 +33,25 @@ function alternarBotao() {
 }
 
 
-function menuShow(){
-    let menuMobile = document.querySelector('.mobile-menu');
+function menuShow() {
+    const menuMobile = document.querySelector('.mobile-menu');
+    const icon = document.querySelector('.icon');
 
-    if(menuMobile.classList.contains('open')){
+    // Adiciona ou remove a classe 'open' corretamente
+    if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-         document.querySelector('.icon').src = "assets/img/menu_white_36dp.svg";
+        icon.src = "assets/img/menu_white_36dp.svg";
     } else {
         menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assets/img/close_white_36dp%20(1).svg";
+        icon.src = "assets/img/close_white_36dp%20(1).svg";
     }
 }
+
+// Adiciona um evento para redimensionamento de tela para sincronizar o estado
+window.addEventListener('resize', () => {
+    const menuMobile = document.querySelector('.mobile-menu');
+    if (window.innerWidth > 935) {
+        menuMobile.classList.remove('open'); // Remove 'open' em telas maiores
+        menuMobile.style.display = 'none';  // Garante que fica oculto
+    }
+});

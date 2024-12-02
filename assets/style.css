@@ -12,6 +12,7 @@ body{
     width: 100vw;
     background: linear-gradient(150deg, rgb(0, 0, 0),#9d00ff, #000000);
     background-size: 130% 130%;
+    overflow-x: hidden;
 }
 
 header{
@@ -377,8 +378,100 @@ div.skills__box{
     transform: translateY(-.25rem);
 }
 
+/* servicos */
+/* Estilo para o título da seção */
+.service_title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px black;
+    position: relative;
+    z-index: 2;
+}
+
+.background-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #2007265b; /* Cor apagada */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Estilo para os serviços */
+.service{
+    width: 100vw;
+    background-color: #31024e79;
+    display: flex; /* Flexbox ajuda na centralização */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column;
+    margin: 0 auto; /* Garante centralização horizontal */
+    height: 75vh; /* Preenche a altura total da janela */
+    padding: 0 1rem; /* Evita que o conteúdo grude nas bordas em telas pequenas */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura/altura */
+    margin-top: 25vh;
+    margin-bottom: -20vh;
+}
+
+.service-offices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Exatamente 2 colunas */
+    gap: 1rem;
+}
+
+.main-title{
+    color: white;
+    text-shadow: 0px 0px 20px black;
+}
+
+.service-info {
+    background-color: #9b00fbe5;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.service-icon i{
+    color: #200726;
+}
+
+.service-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d35df350;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #007BFF; /* Cor do ícone */
+    margin-bottom: 1rem;
+}
+
+.service-text{
+    color: white;
+}
+
+.service-text p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* fim servicos */
+
 .heading{
-    margin-top: 15%;
+    margin-top: 15vh;
     letter-spacing: 3px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
@@ -395,7 +488,9 @@ div.skills__box{
 }
 
 .education{
-    padding: 100px 15px;
+    padding: 18px 25px;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 }
 
 .education h2{
