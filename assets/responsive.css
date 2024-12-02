@@ -18,6 +18,9 @@
     .text_education{
         text-align: center;
     }
+    .background-title{
+        font-size: 6rem;
+    }
 }
 
 
@@ -39,6 +42,9 @@
 
     .home .container-foto img{
         max-width: 320px;
+    }
+    .background-title{
+        font-size: 4.5rem;
     }
 
     .projetos{
