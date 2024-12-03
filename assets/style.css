@@ -713,8 +713,8 @@ border-bottom: 3px solid white;
 
 .skill-list {
     display: none; /* Inicialmente fechado */
-    padding: 15px;
-    border-top: 1px solid #ddd;
+    padding: 25px;
+    
     background-color: #31024e28 ;
 }
 
