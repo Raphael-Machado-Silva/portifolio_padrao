@@ -419,7 +419,7 @@ div.skills__box{
     height: 75vh; /* Preenche a altura total da janela */
     padding: 0 1rem; /* Evita que o conteúdo grude nas bordas em telas pequenas */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura/altura */
-    margin-top: 25vh;
+    margin-top: 12vh;
     margin-bottom: -20vh;
 }
 
@@ -670,8 +670,96 @@ border-bottom: 3px solid white;
     font-size: 45px;
     font-weight: 600;
 }
+/* habilidades seção */
+.skills-section {
+    color: black;
+    max-width: 850px;
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 24vh auto;
+}
 
+.projects{
+    color: white;
+    margin: 5vh 0 -3vh 0;
+}
+.skill-category {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.skill-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #27003F ;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.skill-header:hover {
+    background-color: #43006E;
+}
+
+.skill-list {
+    display: none; /* Inicialmente fechado */
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #31024e28 ;
+}
+
+.skill-list.open {
+    display: block; /* Aberto */
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.progress-bar-container {
+    position: relative;
+    width: 100%;
+    background: #ddd;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px; /* Adiciona espaço acima da barra */
+}
+
+.progress-bar {
+    height: 10px;
+    background: #8300D6;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #8300D6;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    top: -18px; /* Posiciona a porcentagem acima da barra */
+    right: 0; /* Alinha a porcentagem à direita da barra */
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skill-title h3{
+    font-size: 1.1em;
+}
 
 
 @media screen and (max-width:720px) {

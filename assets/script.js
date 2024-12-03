@@ -55,3 +55,22 @@ window.addEventListener('resize', () => {
         menuMobile.style.display = 'none';  // Garante que fica oculto
     }
 });
+
+
+
+// HABILIDADES FUNÇÕES
+document.querySelectorAll('.skill-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const skillList = header.nextElementSibling;
+        const isVisible = skillList.classList.contains('open');
+
+        // Alterna a visibilidade
+        if (isVisible) {
+            skillList.classList.remove('open');
+            header.querySelector('span').innerHTML = '&#9660;'; // Seta para baixo
+        } else {
+            skillList.classList.add('open');
+            header.querySelector('span').innerHTML = '&#9650;'; // Seta para cima
+        }
+    });
+});
