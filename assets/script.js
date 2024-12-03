@@ -74,3 +74,23 @@ document.querySelectorAll('.skill-header').forEach(header => {
         }
     });
 });
+
+// Função para mostrar a barra de progresso quando ela entra na viewport
+function showProgressBar(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // Para garantir que a animação ocorra apenas uma vez
+        }
+    });
+}
+
+// Configuração do observer
+const observer = new IntersectionObserver(showProgressBar, {
+    threshold: 0.5 // Ajuste este valor conforme necessário para controlar a visibilidade
+});
+
+// Seleciona todas as barras de progresso
+document.querySelectorAll('.progress-bar-container').forEach(bar => {
+    observer.observe(bar);
+});

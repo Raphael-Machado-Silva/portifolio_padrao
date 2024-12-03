@@ -760,6 +760,15 @@ border-bottom: 3px solid white;
 .skill-title h3{
     font-size: 1.1em;
 }
+.hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
 
 
 @media screen and (max-width:720px) {
