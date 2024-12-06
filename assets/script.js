@@ -94,3 +94,24 @@ const observer = new IntersectionObserver(showProgressBar, {
 document.querySelectorAll('.progress-bar-container').forEach(bar => {
     observer.observe(bar);
 });
+
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0
+    );
+}
+
+function onScroll() {
+    const lines = document.querySelectorAll('.line');
+    lines.forEach(line => {
+        if (isElementInViewport(line)) {
+            line.classList.add('visible');
+        }
+    });
+}
+
+window.addEventListener('scroll', onScroll);
+window.addEventListener('load', onScroll); // Trigger on load in case the element is already in view

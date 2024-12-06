@@ -470,6 +470,50 @@ div.skills__box{
 }
 /* fim servicos */
 
+.line-container {
+    position: relative;
+    width: fit-content;
+    margin-top: -65px;
+    width: 100%;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    height: 4px;
+    background-color: #9700F6;
+    width: 400px; /* Define um tamanho fixo para testar */
+    transition: transform 0.6s ease;
+}
+
+.line.visible {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.line-skills{
+    margin-top: 28px;
+    width: 180px;
+    background-color: #2A0044;
+}
+
+.line-education{
+    margin-top: -42px;
+    width: 320px;
+    background-color: #2A0044;
+}
+
+.titulo-c-linha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 6vh;
+}
+
+
 .heading{
     margin-top: 15vh;
     letter-spacing: 3px;
@@ -690,6 +734,7 @@ border-bottom: 3px solid white;
     width: 100%;
     background: #fff;
     margin-bottom: 15px;
+    margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
