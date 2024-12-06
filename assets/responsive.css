@@ -46,7 +46,12 @@
     .background-title{
         font-size: 4.5rem;
     }
-
+    .line{
+        width: 290px;
+    }
+    .line-skills{
+        width: 170px;
+    }
     .projetos{
         padding: 30px;
     }
