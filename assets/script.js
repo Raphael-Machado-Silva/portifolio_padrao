@@ -97,8 +97,8 @@ const progressObserver = new IntersectionObserver(toggleProgressBar, {
 });
 
 // Seleciona todas as barras de progresso e as observa
-document.querySelectorAll('.line').forEach(line => {
-    progressObserver.observe(line);
+document.querySelectorAll('.progress-bar-container').forEach(container => {
+    progressObserver.observe(container);
 });
 
 // Função para verificar se um elemento está visível na viewport (usada em outra parte do código)
