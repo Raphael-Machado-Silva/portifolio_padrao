@@ -419,7 +419,7 @@ div.skills__box{
     height: 75vh; /* Preenche a altura total da janela */
     padding: 0 1rem; /* Evita que o conteúdo grude nas bordas em telas pequenas */
     box-sizing: border-box; /* Inclui o padding no cálculo da largura/altura */
-    margin-top: 12vh;
+    margin-top: 2vh;
     margin-bottom: -20vh;
 }
 

@@ -32,7 +32,6 @@ function alternarBotao() {
     }
 }
 
-
 function menuShow() {
     const menuMobile = document.querySelector('.mobile-menu');
     const icon = document.querySelector('.icon');
@@ -56,8 +55,6 @@ window.addEventListener('resize', () => {
     }
 });
 
-
-
 // HABILIDADES FUNÇÕES
 document.querySelectorAll('.skill-header').forEach(header => {
     header.addEventListener('click', () => {
@@ -75,26 +72,26 @@ document.querySelectorAll('.skill-header').forEach(header => {
     });
 });
 
-// Função para mostrar a barra de progresso quando ela entra na viewport
-function showProgressBar(entries, observer) {
+// Função para mostrar e esconder a barra de progresso ao entrar e sair da viewport
+function toggleProgressBar(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-            observer.unobserve(entry.target); // Para garantir que a animação ocorra apenas uma vez
+        } else {
+            entry.target.classList.remove('show');
         }
     });
 }
 
-// Configuração do observer
-const observer = new IntersectionObserver(showProgressBar, {
-    threshold: 0.5 // Ajuste este valor conforme necessário para controlar a visibilidade
+// Configuração do observer para a barra de progresso
+const progressObserver = new IntersectionObserver(toggleProgressBar, {
+    threshold: 0.5 // Ajuste para controlar a sensibilidade da visibilidade
 });
 
-// Seleciona todas as barras de progresso
-document.querySelectorAll('.progress-bar-container').forEach(bar => {
-    observer.observe(bar);
+// Seleciona todas as barras de progresso e as observa
+document.querySelectorAll('.line').forEach(line => {
+    progressObserver.observe(line);
 });
-
 
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -109,6 +106,8 @@ function onScroll() {
     lines.forEach(line => {
         if (isElementInViewport(line)) {
             line.classList.add('visible');
+        } else {
+            line.classList.remove('visible');
         }
     });
 }
